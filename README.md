@@ -14,7 +14,7 @@ AutosRUs' newest prototype, the MechaCar, is "suffering from production troubles
 
 ![2021-11-19 (1)-reduced](https://user-images.githubusercontent.com/35401581/142702858-c48aecd3-9092-4c2a-a42e-2c145bb93e19.png)
 
-* A multilinear regression analysis was performed on the mechaCar_mpg data.csv which contains results for 50 prototype MechaCars. The variables used were vehicle length, vehicle weight, spoiler angle, drivetrain, and ground clearance. 
+* A multilinear regression analysis was performed on the MechaCar_mpg data.csv which contains results for 50 prototype MechaCars. The variables used were vehicle length, vehicle weight, spoiler angle, drivetrain, and ground clearance. 
 * According to the results, vehicle length and ground clearance are the most significant variables in our dataset and show a non-random effect on the MPG of the MechaCar prototype.  As shown in the above chart, a multilinear regression model run on these variables against figures for MPG, resulted in Pr(>|t|)-values of 2.6e-12 and 5.21e-08, respectively. The intercept of 5.08e-08 was also statistically significant.  There are likely other factors, not included in our dataset, that could have a strong impact on the MPG.
 * Also evident on the summary output is the r-squared value of .71 and a significant p_factor of 5.35e-11 which indicate the variables included, most significantly vehicle length and ground clearance, are a strong predictors of MPG for the prototype.  However, there is room for some improvement.
 
@@ -29,13 +29,13 @@ Lot Summary - statistics per lot
 ![Lot Summary PSI](https://user-images.githubusercontent.com/35401581/142702949-a8d01486-53d6-4f58-ae81-ae99a1c3c1cc.png)
 
 
-In the total summary as well as the lot summary, the mean and median are fairly close together which means there is a fairly normal distribution.  And the variance of the suspension coils in the total summary appears to meet design specifications with a variance of 62.3 pounds per square inch (PSI). However,the variance for lot 3 in the lot summary is well over design specifications of 100 at 170.3 PSI.  Evaulation of the manufacturing is warranted.  There is a disparity in the lots and perhaps different manufacturers are being used to cause the disparity.  Lots 1 and 2 are well within the design specifications with a variance of 0.98 and 7.5 PSI, respectively.
+In the total summary as well as the lot summary, the mean and median are fairly close together which means there is a fairly normal distribution.  And the variance of the suspension coils in the total summary appears to meet design specifications with a variance of 62.3 pounds per square inch (PSI). However,the variance for lot 3 in the lot summary is well over design specifications of 100 at 170.3 PSI.  Evaulation of the manufacturing is warranted.  There is a disparity of lot 3 from the other 2 lots.  Lots 1 and 2 are well within the design specifications with a variance of 0.98 and 7.5 PSI, respectively.
 
 ### T-Tests on Suspension Coils
 
 ![t-test sumary](https://user-images.githubusercontent.com/35401581/142709097-8f84aa7a-a1bb-4638-af50-3d0cbd847c98.png)
 
-Findings for the overall t-test of the suspension coils across all manufacturing lots shows the mean is not statistically different from the population and the p-factor of .06028 is not quite low enough or it of low "signifigance" and we cannot reject it from the hypothesis. 
+Findings for the overall t-test of the suspension coils across all manufacturing lots shows the mean is not statistically different from the population and the p-factor of .06028 is not quite low enough or it is of low "signifigance" and we cannot reject it from the hypothesis. 
 
 ![t-test lot1](https://user-images.githubusercontent.com/35401581/142709101-dc9477e7-2ecf-41fa-adb5-7f75038930ac.png)
 
@@ -56,8 +56,8 @@ Consumers take in many factors when considering purchasing an automobile.  So ma
 For this analysis, AutosRUs will focus on a study of fuel efficiency as miles per gallon (MPG) of different classes of trucks.  
 
 #### Define Hypothesis
-H0: MechaCar standard truck prototypes' average MPG is similar to competitor's standard trucks.
-Ha: MechaCar standard truck prototypes' average MPG is statistically above or below that of competitor' standard trucks.
+- Ho: MechaCar standard truck prototypes' average MPG is similar to competitor's standard trucks.
+- Ha: MechaCar standard truck prototypes' average MPG is statistically above or below that of competitor' standard trucks.
 
 #### Best Statistical Test
 We can use a one-way Anova because it tests a single dependent variable across a single independent variable within multiple groups.
